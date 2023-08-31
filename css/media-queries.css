@@ -1,0 +1,128 @@
+@media only screen and (min-width: 1024px) {
+
+    /* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+
+    .button {
+        margin-top: 0;
+    }
+
+    .heading-text {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    /* ++++++++++++++ HEADER ++++++++++++++ */
+
+    .header-container,
+    .project-container,
+    .about-container,
+    .interested-container,
+    .logo-networks {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .logo-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-menu .menu {
+        display: none;
+    }
+
+    .logo-menu .navigation-menu,
+    .logo-menu .button {
+        display: flex;
+    }
+
+    .logo-menu .navigation-menu {
+        column-gap: 1.5rem;
+    }
+
+    .navigation-menu .option {
+        color: var(--paragraph-text-color);
+        font-size: 1.6rem;
+        transition: color .3s ease-in-out;
+    }
+
+    .navigation-menu .option:hover {
+        color: var(--white-color);
+        text-decoration: underline;
+    }
+
+    .introductory-text .heading {
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+    }
+
+    .company-logos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ++++++++++++++ PROJECTS ++++++++++++++ */
+
+    .projects,
+    .about,
+    .interested {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+
+    .project:last-of-type {
+        padding-top: 0;
+    }
+
+    /* ++++++++++++++ ABOUT ++++++++++++++ */
+
+    .text-block .heading {
+        padding-top: 0;
+    }
+
+    /* ++++++++++++++ FOOTER ++++++++++++++ */
+
+    .logo-networks {
+        justify-content: center;
+        column-gap: 25rem;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+
+    /* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+
+    .heading-text {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    /* ++++++++++++++ HEADER ++++++++++++++ */
+
+    .header-container {
+        padding: 4rem 4rem 2rem;
+    }
+
+    .introductory-text .heading {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+    }
+
+    .company-logos {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    /* ++++++++++++++ PROJECTS ++++++++++++++ */
+
+    .project-container,
+    .about-container,
+    .interested-container,
+    .logo-networks {
+        padding: 4rem;
+    }
+
+    .project .image img{
+        width: 100%;
+    }
+}
